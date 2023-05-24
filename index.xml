@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<library xmlns="https://open.law/schemas/library" xmlns:codified="https://open.law/schemas/codified" xmlns:codify="https://open.law/schemas/codify" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cache="https://open.law/schemas/cache">
+  <heading>Open Law Library</heading>
+  <meta>
+    <description>Browse the laws and codes published on the Open Law Platform</description>
+    <contact>
+      <email>help@openlawlib.org</email>
+    </contact>
+    <canonical-urls>
+      <xml-bulk>https://github.com/oll-test-repos/openlawlibrary-law-xml</xml-bulk>
+      <html-bulk>https://github.com/oll-test-repos/openlawlibrary-law-html</html-bulk>
+      <static-assets>https://github.com/oll-test-repos/openlawlibrary-law-static-assets</static-assets>
+      <html></html>
+	    <law-git>https://github.com/oll-test-repos/cityofsanmateo-law.git</law-git>
+    </canonical-urls>
+    <history-start>2018-03-05</history-start>
+  </meta>
+  
+  <!-- RDF: first approach -->
+  <document xi:href="/_stelae/mohicanlaw/law-rdf/us/nsn/mohican/council/resolutions/1995/1526-95/index.rdf"></document>
+  <!-- RDF: second approach: document id in law-rdf repository -->
+  <document ref="Stockbridge-Munsee Tribal Council Res. No. 1526-95"></document>
+  <collection ref="/us/ca/cities/san-mateo/ordinances/2022"></collection>
+  
+  <!-- Approach: reference to another collection -->
+  <collection xi:href="/_stelae/cityofsanmateo/law-html/us/ca/cities/san-mateo/ordinances/2022"> 
+  </collection>
+  <document xi:href="/_stelae/cityofsanmateo/law-html/us/ca/cities/san-mateo/charter"></document>
+  <!--  -->
+  <!--  -->
+  <xi:link xi:href="/_stelae/cityofsanmateo/law-xml/us/ca/cities/san-mateo/charter/index.xml"></xi:link>
+  <xi:include href="./us/ca/cities/san-mateo/code/index.xml"/>
+
+  <!-- old stuff (copied over from smc) -->
+  <collection name="us/ca/cities/san-mateo/ordinances">
+    <heading>Ordinances</heading>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2022/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2021/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2020/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2019/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2018/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2017/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2016/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2015/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2014/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2013/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2012/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2011/index.xml"/>
+    <xi:include href="./us/ca/cities/san-mateo/ordinances/2010/index.xml"/>
+  </collection>
+  <xi:include href="./us/ca/cities/san-mateo/drafting-manual/index.xml"/>
+</library>
